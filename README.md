@@ -77,3 +77,34 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## Download the project from GitHub
+$ git clone https://github.com/ahmadqawasmeh2/WebsiteTask
+
+## Before open project in computer
+$composer install and $ php artisan vendor:publish --force
+
+## check file env (connect to database
+command line use in laravel
+1)create project: composer create-project laravel/laravel WebsiteTask --prefer-dist
+
+## create connection with mysql(php my admin)
+Using the env file
+
+## create migration and model packge
+$php artisan make:model Models/Post -m
+
+## Link tables relationships
+upload tables in database(php my admin)
+$php artisan migrate
+
+## create controller in packge
+$ php artisan make:controller pagescontroller/pagescontroller/Homecontroller
+
+## add design in resources and Split files (layouts and packge) Take the design files, javascript and bootstrap files to a file public
+create request with packge controller
+$ php artisan make:request pagescontroller/CreateRequest
+
+## require auth in laravel
+$ composer require laravel/ui
